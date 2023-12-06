@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body x-data="{ image : 'https://picsum.photos/id/237/400/300', }">
+<body x-data="{ image : null }">
     <h1>Galerie</h1>
     <p>lorem⇥</p>
+    <img src="https://picsum.photos/id/237/400/300" alt="miniatue chiot" @click="image= 'https://picsum.photos/id/237/400/300'">
+    <img src="https://picsum.photos/id/238/400/300" alt="miniatue ville" @click="image= 'https://picsum.photos/id/238/400/300'">
     <div class="overlay" x-show="image" @click="image=null" @keyup.escape.window="image=null">
+        
       <figure><img :src="image" alt="image 237... un chiot"></figure>
     </div>
 </body>
