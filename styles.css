@@ -1,9 +1,14 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    background-color: #dedede;
 }
 
 li {
     list-style-type: none;
+}
+
+h1 {
+    text-align: center;
 }
 
 a {
@@ -86,12 +91,21 @@ a {
 .miniatures {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 14px;
     justify-content: center;
 }
 
 .miniature {
+    box-shadow: 10px -10px gray;
     border-radius: 5%;
     max-width: 150px;
     height: auto;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.miniature:hover {
+    box-shadow: 0px 0px #dedede;
+    transform: translate(10px, -10px);
+
 }
