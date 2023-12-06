@@ -1,6 +1,6 @@
 .overlay {
     /* Sit on top of the page content */
-    z-index: 1;
+    position: fixed;
     /* Full width (cover the whole page) */
     height: 100%;
     /* Full height (cover the whole page) */
@@ -21,7 +21,7 @@
     display: grid;
     /* Center vertically and horizontally */
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
 .overlay::after {
     /* Add content : "X" */
@@ -53,13 +53,13 @@
     /* Rounded border */
     border-radius: 1rem;
 }
-.overlay>figure {
+.overlay > figure {
     /* No margin */
     margin: 0;
     /* 1rem padding */
     padding: 1rem;
     /* White border of 2px */
-    border: 2px;
+    border : 2px solid white;
 }
 
 .overlay>figure>img {
