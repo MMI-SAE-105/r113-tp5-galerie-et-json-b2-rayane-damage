@@ -1,3 +1,7 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .overlay {
     /* Sit on top of the page content */
     position: fixed;
@@ -66,5 +70,18 @@
     /* Max width 100% for responsive image */
     max-width: 100%;
     /* Height auto for keeping the ratio */
+    height: auto;
+}
+
+.miniatures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.miniature {
+    border-radius: 5%;
+    max-width: 150px;
     height: auto;
 }
