@@ -1,15 +1,27 @@
 .overlay {
     /* Sit on top of the page content */
+    z-index: 1;
     /* Full width (cover the whole page) */
+    height: 100%;
     /* Full height (cover the whole page) */
+    width: 100%;
     /* Stay at the top */
+    top: 0;
     /* Stay at the left */
+    left: 0;
     /* Stay at the right */
+    right: 0;
     /* Stay at the bottom */
+    bottom: 0;
     /* Black background with opacity */
+    background-color: hsl(0 0% 0% / 0.75);
     /* Add a pointer on hover */
+    cursor: pointer;
     /* Use a grid for easy centering */
+    display: grid;
     /* Center vertically and horizontally */
+    align-items: center;
+    justify-content: center;
 }
 .overlay::after {
     /* Add content : "X" */
